@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main{
+    width: 400px;
+    min-height: 400px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 40px 30px;
+}
+.main .social-para{
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.main .social-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+}
+.main .social-div a{
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.main .social-div a svg{
+    margin-right: 10px;
+}
+.main .social-div a.facebook{
+    background-color: #4267B2;
+}
+.main .social-div a.google{
+    background-color: #db4a39;
+}.main .social-div a.linkedin{
+    background-color: #0e76a8;
+}.main .social-div a.github{
+    background-color: rgb(49, 45, 45);
+}
+.main .social-div a.facebook:hover{
+    background-color: #3a5b9e;
+}
+.main .social-div a.google:hover{
+    background-color: #c53f30;
+}.main .social-div a.linkedin:hover{
+    background-color: #126286;
+}.main .social-div a.github:hover{
+    background-color: rgb(73, 68, 68);
+}
+
+.main .login-email{
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.main .email .input{
+width: 100%;
+height: 50px;
+margin-bottom: 25px;
+}
+.main .email .input input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.3s;
+}
+.main .email .input input:focus, .main .email .input input:valid{
+    border-color: #254e70;
+}
+.main .email .input .btn{
+display: block;
+width: 100%;
+padding: 15px 20px;
+text-align: center;
+border: none;
+background: #114774;
+color: white;
+outline: none;
+border-radius: 30px;
+font-size: 1.2rem;
+cursor: pointer;
+transition: 0.3s;
+}
+.main .email .input .btn:hover{
+    background: #2176bd;
+}
+
+@media (max-width: 430px){
+    .main{
+        width: 300px;
+
+    }
+    .main .social-div{
+        display: block;
+
+    }
+    .main .social-div a{
+        display: block;
+        
+    }
+}
+/* margin-bottom: 25px */
